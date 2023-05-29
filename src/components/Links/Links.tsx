@@ -1,5 +1,5 @@
 import Image from "next/image";
-import styles from "./Links.module.css";
+import styles from "src/components/Links/Links.module.css";
 
 const ITEMS = [
   { href: "https://nextjs.org/docs?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app", title: "Docs", description: "Find in-depth information about Next.js features and API." },
