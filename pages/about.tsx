@@ -1,9 +1,6 @@
 import type { NextPage } from "next";
 import Head from "next/head";
-import { Inter } from "next/font/google";
 import MainTag from "@/components/MainTag";
-
-const inter = Inter({ subsets: ["latin"] });
 
 const Home: NextPage = () => {
   return (
