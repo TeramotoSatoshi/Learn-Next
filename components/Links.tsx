@@ -4,7 +4,7 @@ import styles from "@/styles/Home.module.css";
 
 const inter = Inter({ subsets: ["latin"] });
 
-export default function Links() {
+const Links: React.FC = () => {
   return (
     <>
       <div className={styles.center}>
@@ -42,4 +42,6 @@ export default function Links() {
       </div>
     </>
   );
-}
+};
+
+export default Links;
