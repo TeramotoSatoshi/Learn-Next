@@ -7,12 +7,9 @@ import { useCallback, useEffect, useState } from "react";
 const Home: NextPage = () => {
   const [count, setCount] = useState(1);
 
-  const handleClick = useCallback(
-    (e: React.MouseEvent<HTMLButtonElement, MouseEvent>) => {
-      setCount((count) => count + 1);
-    },
-    [count]
-  );
+  const handleClick = useCallback(() => {
+    setCount((count) => count + 1);
+  }, [count]);
 
   // レンダリングされたら実行
   useEffect(() => {
