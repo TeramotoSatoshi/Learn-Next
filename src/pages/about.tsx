@@ -3,7 +3,7 @@ import Head from "next/head";
 import MainTag from "src/components/MainTag/MainTag";
 import Header from "src/components/Header/Header";
 
-const Home: NextPage = () => {
+const About: NextPage = () => {
   return (
     <>
       <Head>
@@ -15,4 +15,4 @@ const Home: NextPage = () => {
   );
 };
 
-export default Home;
+export default About;
