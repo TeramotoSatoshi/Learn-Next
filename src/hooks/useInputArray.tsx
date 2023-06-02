@@ -1,7 +1,7 @@
 import { useCallback, useState } from "react";
 
 export const useInputArray = () => {
-  const [text, setText] = useState("");
+  const [text, setText] = useState<string>("");
   const [array, setArray] = useState<string[]>([]);
   // テキスト変更
   const handleChange = useCallback(

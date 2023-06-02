@@ -1,8 +1,8 @@
 import { useCallback, useState } from "react";
 
 export const useCounter = () => {
-  const [count, setCount] = useState(1);
-  const [isShow, setIsShow] = useState(true);
+  const [count, setCount] = useState<number>(1);
+  const [isShow, setIsShow] = useState<boolean>(true);
 
   // ボタン押下
   const handleClick = useCallback(() => {

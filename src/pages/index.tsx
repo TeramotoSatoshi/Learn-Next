@@ -2,14 +2,22 @@ import Head from "next/head";
 import type { NextPage } from "next";
 import MainTag from "src/components/MainTag/MainTag";
 import Header from "src/components/Header/Header";
-import { useInputArray } from "src/hooks/useInputArray";
-import { useCounter } from "src/hooks/useCounter";
-import { useBgLightBlue } from "src/hooks/useBgLightBlue";
 
-const Home: NextPage = () => {
-  const { count, isShow, handleClick, handleDisplay } = useCounter();
-  const { text, array, handleChange, handleAdd } = useInputArray();
-  useBgLightBlue();
+interface pageProps {
+  count: number;
+  isShow: boolean;
+  handleClick: () => void;
+  handleDisplay: () => void;
+  text: string;
+  array: string[];
+  handleChange: (event: React.ChangeEvent<HTMLInputElement>) => void;
+  handleAdd: () => void;
+}
+
+const Home: NextPage<pageProps> = (props) => {
+  console.log(props);
+  // 分割代入
+  const { count, isShow, handleClick, handleDisplay, text, array, handleChange, handleAdd } = props;
   return (
     <>
       <Head>
