@@ -5,6 +5,7 @@ import Header from "src/components/Header/Header";
 
 interface pageProps {
   count: number;
+  doubleCount: number;
   isShow: boolean;
   handleClick: () => void;
   handleDisplay: () => void;
@@ -15,14 +16,14 @@ interface pageProps {
 }
 
 const About: NextPage<pageProps> = (props) => {
-  const { count, isShow, handleClick, handleDisplay, text, array, handleChange, handleAdd } = props;
+  const { count, doubleCount, isShow, handleClick, handleDisplay, text, array, handleChange, handleAdd } = props;
   return (
     <>
       <Head>
         <title>About Page</title>
       </Head>
       <Header />
-      {isShow ? <h1>{count}</h1> : null}
+      {isShow ? <h1>{doubleCount}</h1> : null}
       <button onClick={handleClick}>ボタン</button>
       <button onClick={handleDisplay}>{isShow ? "非表示" : "表示"}</button>
       <input type="text" value={text} onChange={handleChange} />

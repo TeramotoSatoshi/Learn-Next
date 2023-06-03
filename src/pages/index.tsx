@@ -14,7 +14,6 @@ interface pageProps {
 }
 
 const Home: NextPage<pageProps> = (props) => {
-  console.log(props);
   // 分割代入
   const { count, isShow, handleClick, handleDisplay, text, array, handleChange, handleAdd } = props;
   return (
