@@ -16,7 +16,7 @@ interface pageProps {
 }
 
 const About: NextPage<pageProps> = (props) => {
-  const { count, doubleCount, isShow, handleClick, handleDisplay, text, array, handleChange, handleAdd } = props;
+  const { doubleCount, isShow, handleClick, handleDisplay, text, array, handleChange, handleAdd } = props;
   return (
     <>
       <Head>
