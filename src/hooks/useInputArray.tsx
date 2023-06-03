@@ -14,7 +14,7 @@ export const useInputArray = () => {
   // 配列追加
   const handleAdd = useCallback(() => {
     setArray((prevArray) => {
-      if (prevArray.some((item) => item === text)) {
+      if (prevArray.includes(text)) {
         alert("配列内に同一の要素が存在します");
       }
       const newArray = [...prevArray, text];
